@@ -1,0 +1,1 @@
+This is a boilerplate starter for [Office UI Fabric React](https://github.com/officedev/office-ui-fabric-react). It was created based on `create-react-app` with `react-ts-scripts` added.
