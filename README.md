@@ -1,4 +1,18 @@
-# Fabric BrownBag
+# Fabric Workshop
+
+## Getting Started
+
+- Install [Node](https://nodejs.org/en/)
+- Install [VS Code](https://code.visualstudio.com/) or your editor of choice
+- Install [Git](https://git-scm.com/)
+- Follow the steps below in your terminal/git client of choice
+
+```bash
+$ git clone https://github.com/micahgodbolt/fabric-workshop-demo
+$ cd fabric-workshop-demo
+$ npm install
+& npm start
+```
 
 ## Links
 - [Fabric Documentation](https://developer.microsoft.com/en-us/fabric)
