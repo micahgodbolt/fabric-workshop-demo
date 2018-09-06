@@ -96,7 +96,7 @@ export class DemoComponent extends BaseComponent {
     checked ? button.openMenu() : button.dismissMenu();
   };
 
-  // This is for the SearchBox getStyles function. This is the modern theming approach.
+  // This is for the SearchBox styles function. This is the modern theming approach.
   // Props are passed in (including state, theme etc) and SearchBox styles are returned
   private _getSearchStyles = (props: ISearchBoxStyleProps): ISearchBoxStyles => {
     const {
