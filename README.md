@@ -11,7 +11,7 @@
 $ git clone https://github.com/micahgodbolt/fabric-workshop-demo
 $ cd fabric-workshop-demo
 $ npm install
-& npm start
+$ npm start
 ```
 
 ## Links
