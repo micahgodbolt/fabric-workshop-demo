@@ -31,7 +31,6 @@ $ npm start
 ## Topics Covered
 
 - Fabric History
-- Theming History
 - Installing/Using Fabric
 - Writing a new component 
   - consts
