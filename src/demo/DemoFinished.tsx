@@ -14,7 +14,7 @@ import {
 } from 'office-ui-fabric-react';
 import { VerticalStack } from '@uifabric/experiments';
 
-import { items, commandBarItems, overflowItems } from './items';
+import { commandBarItems, overflowItems } from './items';
 
 // Put const values in file scope
 const COMMANDBARHEIGHT = 50;
@@ -35,14 +35,11 @@ export class DemoComponent extends BaseComponent<{}, {}> {
     );
 
     const farItems: ICommandBarItemProps[] = [
-      {
-        key: 'search',
-        onRender: () => <SearchBox styles={this._getSearchStyles} />
-      }
+      { key: 'search', onRender: () => <SearchBox styles={this._getSearchStyles} /> }
     ];
 
     const dropdownItems: ICommandBarItemProps[] = [
-      { key: 'dropdownsearch', onRender: () => <CommandBarSearch underlined /> }
+      { key: 'foo', onRender: () => <CommandBarSearch underlined /> }
     ];
 
     return (

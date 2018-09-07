@@ -14,7 +14,7 @@ import {
 } from 'office-ui-fabric-react';
 import { VerticalStack } from '@uifabric/experiments';
 
-import { items, commandBarItems, overflowItems } from './items';
+import { commandBarItems, overflowItems } from './items';
 
 
 
