@@ -14,11 +14,15 @@ import {
 } from 'office-ui-fabric-react';
 import { VerticalStack } from '@uifabric/experiments';
 
-import { commandBarItems, overflowItems } from './items';
+
+export interface IDemoProps {
+  commandBarItems: ICommandBarItemProps[]; 
+  overflowItems?: ICommandBarItemProps[];
+}
 
 
-
-export class DemoComponent extends BaseComponent<{}, {}> {
+export class DemoComponent extends React.Component<IDemoProps, {} > {
+  
   public render() {
     return (
       <p>Let's get started</p>

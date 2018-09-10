@@ -14,13 +14,16 @@ import {
 } from 'office-ui-fabric-react';
 import { VerticalStack } from '@uifabric/experiments';
 
-import { commandBarItems, overflowItems } from './items';
+export interface IDemoProps {
+  commandBarItems: ICommandBarItemProps[]; 
+  overflowItems?: ICommandBarItemProps[];
+}
 
 const COMMANDBARHEIGHT = 50;
 const GAPSPACE = 20;
 const BEAKWIDTH = 20;
 
-export class DemoComponent extends BaseComponent<{}, {}> {
+export class DemoComponent extends React.Component<IDemoProps, {} > {
   private _overflow = React.createRef<IButton>();
 
   public render() {
@@ -41,6 +44,8 @@ export class DemoComponent extends BaseComponent<{}, {}> {
     const dropdownItems: ICommandBarItemProps[] = [
       { key: 'dropdownsearch', onRender: () => <CommandBarSearch underlined /> }
     ];
+
+    const { commandBarItems, overflowItems } = this.props;
 
     return (
         <p>Let's get started</p>
